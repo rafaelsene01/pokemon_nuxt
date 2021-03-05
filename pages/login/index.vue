@@ -22,7 +22,7 @@
           { 'bg-gray-400': loading },
           { 'bg-blue-pokemon-100': !loading },
         ]"
-        class="flex justify-center hover:bg-blue-dark text-white font-bold py-2 px-4 rounded w-20 focus:outline-none"
+        class="flex justify-center hover:bg-blue-dark text-white font-bold py-2 px-4 rounded w-24 focus:outline-none"
         type="submit"
         :disabled="loading"
       >
