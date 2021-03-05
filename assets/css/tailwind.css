@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply w-full h-full p-0 m-0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+@media (min-width: 1281px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+
+a {
+  @apply cursor-pointer;
+}
+
+.footer {
+  @apply w-full flex justify-center h-16 xl:h-20 items-center;
+  @apply bg-footer;
+}
+
+.sn-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4;
+  @apply overflow-y-auto p-4;
+}
+
+.game-card,
+.pokemon-cards,
+.pokemon-card-top,
+.pokemon-card-bottom {
+  @apply flex flex-col justify-center items-center relative;
+  @apply overflow-hidden border-card border-solid border-blue-pokemon-200;
+}
+
+.game-card,
+.pokemon-cards {
+  @apply h-56;
+}
+
+.game-card {
+  @apply rounded-card;
+}
+
+.pokemon-cards {
+  @apply rounded-pokemon-card;
+}
+
+.pokemon-card-top,
+.pokemon-card-bottom {
+  @apply w-4/5 md:w-3/5 xl:w-2/5;
+}
+
+.pokemon-card-top {
+  @apply h-96 rounded-t-2xl;
+}
+
+.pokemon-card-bottom {
+  @apply h-auto rounded-b-2xl border-t-0;
+}
+
+.pokemon-card-bottom dl {
+  width: 100%;
+}
