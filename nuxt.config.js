@@ -99,7 +99,6 @@ export default {
         // Disable a plugin by passing false as value
       },
     },
-
     // extend(config) {
     //   config.resolve.alias['@images'] = path.join(__dirname, './assets/images')
     // },
