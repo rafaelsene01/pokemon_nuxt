@@ -9,11 +9,13 @@
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "test": "jest",
+    "test": "npx jest",
+    "test:cov": "npx jest --coverage",
+    "test:watch": "npx jest --watchAll",
     "e2e": "$(npm bin)/cypress open",
     "cy:run": "$(npm bin)/cypress run",
-    "pree2e:slient": "yarn build",
-    "e2e:slient": "start-server-and-test start http://localhost:3000 cy:run"
+    "pree2e:silent ": "yarn build",
+    "e2e:silent ": "start-server-and-test start http://localhost:3000 cy:run"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.1",
